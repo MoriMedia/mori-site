@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="theme-color" content="#0e0e11">
-<meta name="mori-build" content="2026-11-13-analytics">
+<meta name="mori-build" content="2026-11-13-logos-1">
 <title>Mori Brand Partnerships</title>
 <meta name="description" content="Sponsor Mori: long-form, podcast-style variety commentary on YouTube, Spotify and Twitch. Audience, rates and contact.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -207,11 +207,12 @@ footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wr
 .ptiles { list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
 @media (max-width: 860px) { .ptiles { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 480px) { .ptiles { grid-template-columns: 1fr; } }
-.ptile { display: grid; grid-template-columns: 52px 1fr; grid-template-rows: auto auto; column-gap: 14px; align-items: center; padding: 18px; border-radius: 14px; background: #10241a; border: 1px solid #2c5a3d; box-shadow: inset 0 0 0 1px rgba(74,222,128,.04); transition: border-color .15s, transform .15s; }
+.ptile { display: grid; grid-template-columns: 96px 1fr; grid-template-rows: auto auto; column-gap: 14px; align-items: center; padding: 18px; border-radius: 14px; background: #10241a; border: 1px solid #2c5a3d; box-shadow: inset 0 0 0 1px rgba(74,222,128,.04); transition: border-color .15s, transform .15s; }
 .ptile:hover { border-color: #4ade80; transform: translateY(-2px); }
 @media (prefers-reduced-motion: reduce) { .ptile:hover { transform: none; } }
-.plogo { grid-row: span 2; width: 52px; height: 52px; border-radius: 12px; display: grid; place-items: center; background: #4ade80; color: #062b14; font-family: var(--display); font-weight: 800; font-size: 24px; overflow: hidden; }
-.plogo img { width: 100%; height: 100%; object-fit: contain; background: #fff; padding: 6px; }
+.plogo { grid-row: span 2; width: 96px; height: 52px; border-radius: 12px; display: grid; place-items: center; background: #4ade80; color: #062b14; font-family: var(--display); font-weight: 800; font-size: 24px; overflow: hidden; }
+.plogo.has-img { background: #fff; }
+.plogo img { width: 100%; height: 100%; object-fit: contain; padding: 7px; display: block; }
 .pname { font-family: var(--display); font-weight: 800; font-size: 22px; letter-spacing: -0.01em; color: #4ade80; line-height: 1.1; }
 .pcat { font-size: 14px; color: #a7c4b2; }
 .incl { display: flex; align-items: center; gap: 10px; color: var(--ink) !important; }
@@ -459,11 +460,11 @@ footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wr
       <ul class="ptiles">
         <li class="ptile"><span class="plogo" aria-hidden="true">C</span><span class="pname">Chime</span><span class="pcat">Fintech app</span></li>
         <li class="ptile"><span class="plogo" aria-hidden="true">N</span><span class="pname">NordVPN</span><span class="pcat">VPN</span></li>
-        <li class="ptile"><span class="plogo" aria-hidden="true">M</span><span class="pname">Morgan &amp; Morgan</span><span class="pcat">Law firm</span></li>
-        <li class="ptile"><span class="plogo" aria-hidden="true">S</span><span class="pname">Scentbird</span><span class="pcat">Fragrance subscription</span></li>
+        <li class="ptile"><span class="plogo has-img"><img src="https://drive.usercontent.google.com/download?id=1VCBFaBqOihi47wWLCPtXgjXNYdI1DK1T&export=view" alt="Morgan &amp; Morgan logo" loading="lazy" onerror="this.parentNode.classList.remove('has-img');this.parentNode.textContent='M'"></span><span class="pname">Morgan &amp; Morgan</span><span class="pcat">Law firm</span></li>
+        <li class="ptile"><span class="plogo has-img"><img src="https://drive.usercontent.google.com/download?id=1rQZuDujPVe-izBcMhSXOK6JVVcb_9d8s&export=view" alt="Scentbird logo" loading="lazy" onerror="this.parentNode.classList.remove('has-img');this.parentNode.textContent='S'"></span><span class="pname">Scentbird</span><span class="pcat">Fragrance subscription</span></li>
         <li class="ptile"><span class="plogo" aria-hidden="true">C</span><span class="pname">CyberGhost</span><span class="pcat">VPN</span></li>
         <li class="ptile"><span class="plogo" aria-hidden="true">P</span><span class="pname">PolyBuzz</span><span class="pcat">AI chat app</span></li>
-        <li class="ptile"><span class="plogo" aria-hidden="true">A</span><span class="pname">Aura</span><span class="pcat">Identity protection</span></li>
+        <li class="ptile"><span class="plogo has-img"><img src="https://brands.influencelogic.com/assets/aura-mark-_QegI_zK.png" alt="Aura logo" loading="lazy" onerror="this.parentNode.classList.remove('has-img');this.parentNode.textContent='A'"></span><span class="pname">Aura</span><span class="pcat">Identity protection</span></li>
         <li class="ptile"><span class="plogo" aria-hidden="true">P</span><span class="pname">ProtonVPN</span><span class="pcat">VPN</span></li>
         <li class="ptile"><span class="plogo" aria-hidden="true">F</span><span class="pname">Freecash</span><span class="pcat">Rewards app</span></li>
       </ul>
