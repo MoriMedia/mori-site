@@ -291,8 +291,8 @@ footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wr
       <h1>Long shows people keep playing. Your brand, <em>in Mori's voice.</em></h1>
       <p class="lede">Mori is a <b>variety commentary</b> show on YouTube with <b>2.2M subscribers</b>, built like a podcast and also published on <b>Spotify</b>, with live streams on <b>Twitch</b>. Every sponsor read is recorded by Mori and stays in the video for good.</p>
       <div class="ctas">
-        <a class="btn primary" data-track="email_click" data-where="hero" href="mailto:morimediabusiness@gmail.com?subject=Sponsorship%20inquiry">Email morimediabusiness@gmail.com</a>
-        <button class="btn" type="button" data-track="copy_email" data-where="hero" id="copy-hero" data-copy="morimediabusiness@gmail.com">Copy email</button>
+        <a class="btn primary" data-track="email_click" data-where="hero" href="mailto:mori@partnerwithmori.com?subject=Sponsorship%20inquiry">Email mori@partnerwithmori.com</a>
+        <button class="btn" type="button" data-track="copy_email" data-where="hero" id="copy-hero" data-copy="mori@partnerwithmori.com">Copy email</button>
         <a class="btn" data-track="see_rates" href="#rates">See rates</a>
         <span class="copied" id="copy-hero-msg" aria-live="polite"></span>
       </div>
@@ -486,10 +486,10 @@ footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wr
     <div class="contact" id="contact">
       <div class="label">Business inquiries</div>
       <h2>Let's put your brand on air.</h2>
-      <div class="addr">morimediabusiness@gmail.com</div>
+      <div class="addr">mori@partnerwithmori.com</div>
       <div class="ctas">
-        <a class="btn primary" data-track="email_click" data-where="footer" href="mailto:morimediabusiness@gmail.com?subject=Sponsorship%20inquiry">Write an email</a>
-        <button class="btn" type="button" data-track="copy_email" data-where="footer" id="copy-foot" data-copy="morimediabusiness@gmail.com">Copy email</button>
+        <a class="btn primary" data-track="email_click" data-where="footer" href="mailto:mori@partnerwithmori.com?subject=Sponsorship%20inquiry">Write an email</a>
+        <button class="btn" type="button" data-track="copy_email" data-where="footer" id="copy-foot" data-copy="mori@partnerwithmori.com">Copy email</button>
         <span class="copied" id="copy-foot-msg" aria-live="polite"></span>
       </div>
 
@@ -633,7 +633,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wr
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       if (!/^https?:$/.test(location.protocol) || location.origin === "null") {
-        msg.className = "form-msg err"; msg.textContent = "The form works once this page is on your website. For now, email morimediabusiness@gmail.com.";
+        msg.className = "form-msg err"; msg.textContent = "The form works once this page is on your website. For now, email mori@partnerwithmori.com.";
         return;
       }
       btn.disabled = true; msg.className = "form-msg"; msg.textContent = "Sending...";
@@ -646,7 +646,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wr
           window.track("form_submit", { budget: form.elements.budget.value || "", type: form.elements.type.value || "" });
           form.reset(); msg.className = "form-msg ok"; msg.textContent = "Thanks, your brief is in. Mori's team will reply by email.";
         })
-        .catch(function () { msg.className = "form-msg err"; msg.textContent = "That didn't send. Please email morimediabusiness@gmail.com instead."; })
+        .catch(function () { msg.className = "form-msg err"; msg.textContent = "That didn't send. Please email mori@partnerwithmori.com instead."; })
         .finally(function () { btn.disabled = false; });
     });
   }
