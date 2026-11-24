@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="theme-color" content="#0e0e11">
-<meta name="mori-build" content="2026-11-13-stats">
+<meta name="mori-build" content="2026-11-23-rates">
 <title>Mori Brand Partnerships</title>
 <meta name="description" content="Sponsor Mori: long-form, podcast-style variety commentary on YouTube, Spotify and Twitch. Audience, rates and contact.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -123,9 +123,16 @@ section { padding: 56px 0; border-top: 1px solid var(--line); }
 .plat .ph { font-family: var(--mono); font-size: 13.5px; color: var(--muted); word-break: break-all; }
 .plat .pd { font-size: 14.5px; color: var(--muted); }
 
-.rates { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
-@media (max-width: 900px) { .rates { grid-template-columns: 1fr 1fr; } }
-@media (max-width: 480px) { .rates { grid-template-columns: 1fr; } }
+.rates { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+@media (max-width: 860px) { .rates { grid-template-columns: 1fr; } }
+.rate .tag { font-family: var(--mono); font-size: 11.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.rate.lead .tag { color: #4a1c0b; }
+.extras { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 14px; }
+@media (max-width: 600px) { .extras { grid-template-columns: 1fr; } }
+.extra { border: 1px solid var(--line); border-radius: 14px; padding: 16px 22px; display: flex; align-items: baseline; justify-content: space-between; gap: 14px; flex-wrap: wrap; }
+.extra .t { font-weight: 600; font-size: 16px; }
+.extra .t span { display: block; font-weight: 400; font-size: 14.5px; color: var(--muted); }
+.extra .pr { font-family: var(--display); font-weight: 800; font-size: 28px; letter-spacing: -0.02em; }
 .rate { border: 1px solid var(--line); border-radius: 14px; padding: 22px; background: var(--panel); display: flex; flex-direction: column; gap: 10px; }
 .rate.lead { background: var(--tally); border-color: var(--tally); color: var(--tally-ink); }
 .rate .t { font-weight: 600; font-size: 16px; }
@@ -432,14 +439,17 @@ footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wr
     <div class="wrap">
       <div class="sec-head">
         <div class="label">Rate card</div>
-        <h2>Simple pricing</h2>
+        <h2>Three ways to work together</h2>
         <p class="incl"><span class="chk" aria-hidden="true"></span>Every integration includes a pinned comment and a link in the description.</p>
       </div>
       <div class="rates">
-        <div class="rate lead"><div class="t">Integrated ad read</div><div class="pr num">$1,750</div><div class="d">60–90 second mid-roll in a long-form video.</div></div>
-        <div class="rate"><div class="t">Performance (CPM)</div><div class="pr num">$25 <small>/ 1K views</small></div><div class="d">Paid on views over 30 days, with a $750 minimum.</div></div>
-        <div class="rate"><div class="t">3-video package</div><div class="pr num">$4,500</div><div class="d">Three integrations across upcoming uploads.</div></div>
-        <div class="rate"><div class="t">Podcast add-on</div><div class="pr num">+25%</div><div class="d">The same read carried into the Spotify version.</div></div>
+        <div class="rate lead"><div class="tag">Flat rate</div><div class="t">Integrated ad read</div><div class="pr num">$1,750</div><div class="d">60–90 second mid-roll in a long-form video. One fixed price, no tracking needed.</div></div>
+        <div class="rate"><div class="tag">Hybrid</div><div class="t">Flat + performance bonus</div><div class="pr num">$1,250 <small>+ bonus</small></div><div class="d">$1,250 guaranteed, plus a bonus per verified install or sign-up, set per campaign.</div></div>
+        <div class="rate"><div class="tag">Performance</div><div class="t">CPM</div><div class="pr num">$25 <small>/ 1K views</small></div><div class="d">Paid on views over 30 days, with a $750 minimum.</div></div>
+      </div>
+      <div class="extras">
+        <div class="extra"><div class="t">3-video package<span>Three integrations across upcoming uploads.</span></div><div class="pr num">$4,500</div></div>
+        <div class="extra"><div class="t">Podcast add-on<span>The same read carried into the Spotify version.</span></div><div class="pr num">+25%</div></div>
       </div>
 
       <div class="steps" style="margin-top:36px">
@@ -509,6 +519,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wr
           <select id="f-type" name="type">
             <option>Single integration</option>
             <option>3-video package</option>
+            <option>Hybrid (flat + performance bonus)</option>
             <option>CPM / performance deal</option>
             <option>YouTube + Spotify podcast</option>
             <option>Something else</option>
